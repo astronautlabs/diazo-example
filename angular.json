@@ -17,6 +17,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
+            "preserveSymlinks": true,
             "outputPath": "dist/firegraph-example",
             "index": "src/index.html",
             "main": "src/main.ts",
@@ -28,6 +29,7 @@
               "src/assets"
             ],
             "styles": [
+              "./node_modules/@angular/material/prebuilt-themes/indigo-pink.css",
               "src/styles.scss"
             ],
             "scripts": []
@@ -92,6 +94,7 @@
               "src/assets"
             ],
             "styles": [
+              "./node_modules/@angular/material/prebuilt-themes/indigo-pink.css",
               "src/styles.scss"
             ],
             "scripts": []
@@ -123,6 +126,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "firegraph-example"
+    }
+  },
+  "defaultProject": "firegraph-example",
+  "cli": {
+    "analytics": "155cc17b-bcc4-4bf9-881d-9779adfa3d7b"
+  }
 }
