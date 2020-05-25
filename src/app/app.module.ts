@@ -3,7 +3,7 @@ import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { FiregraphModule } from '@astronautlabs/firegraph';
+import { DiazoModule } from 'diazo';
 import { MatCheckboxModule } from '@angular/material/checkbox';
 import { MatSnackBarModule } from '@angular/material/snack-bar';
 
@@ -16,7 +16,7 @@ import { AppComponent } from './app.component';
     BrowserModule,
     BrowserAnimationsModule,
     FormsModule,
-    FiregraphModule,
+    DiazoModule,
     MatCheckboxModule,
     MatSnackBarModule
   ],

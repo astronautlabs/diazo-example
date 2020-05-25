@@ -1,5 +1,5 @@
 {
-  "name": "firegraph-example",
+  "name": "@diazo/example",
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
@@ -21,7 +21,7 @@
     "@angular/platform-browser": "~9.1.9",
     "@angular/platform-browser-dynamic": "~9.1.9",
     "@angular/router": "~9.1.9",
-    "@astronautlabs/firegraph": "0.0.3",
+    "diazo": "0.0.4",
     "@astronautlabs/jsonpath": "^1.0.6",
     "ngx-monaco-editor": "^9.0.0",
     "rxjs": "~6.5.4",

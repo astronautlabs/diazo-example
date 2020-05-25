@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "firegraph-example": {
+    "diazo-example": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -18,7 +18,7 @@
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
             "preserveSymlinks": true,
-            "outputPath": "dist/firegraph-example",
+            "outputPath": "dist/diazo-example",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -68,18 +68,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "firegraph-example:build"
+            "browserTarget": "diazo-example:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "firegraph-example:build:production"
+              "browserTarget": "diazo-example:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "firegraph-example:build"
+            "browserTarget": "diazo-example:build"
           }
         },
         "test": {
@@ -117,18 +117,18 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "firegraph-example:serve"
+            "devServerTarget": "diazo-example:serve"
           },
           "configurations": {
             "production": {
-              "devServerTarget": "firegraph-example:serve:production"
+              "devServerTarget": "diazo-example:serve:production"
             }
           }
         }
       }
     }
   },
-  "defaultProject": "firegraph-example",
+  "defaultProject": "diazo-example",
   "cli": {
     "analytics": "155cc17b-bcc4-4bf9-881d-9779adfa3d7b"
   }

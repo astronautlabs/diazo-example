@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { Firegraph, FiregraphNodeSet, FiregraphContext } from '@astronautlabs/firegraph';
+import { Diazo, DiazoNodeSet, DiazoContext } from 'diazo';
 import { MatSnackBar } from '@angular/material/snack-bar';
 
 @Component({
@@ -15,7 +15,7 @@ export class AppComponent {
   }
   readonly = false;
   active = false;
-  graphContext : FiregraphContext;
+  graphContext : DiazoContext;
   dirty = false;
 
   onSaveRequested() {
@@ -38,21 +38,21 @@ export class AppComponent {
     }
   }
 
-  onContextChanged(context : FiregraphContext) {
+  onContextChanged(context : DiazoContext) {
     this.graphContext = context;
 
-    console.log(`Received graph context from <fg-editor>:`);
+    console.log(`Received graph context from <dz-editor>:`);
     console.dir(context);
   }
 
-  onGraphChanged(graph : Firegraph) {
+  onGraphChanged(graph : Diazo) {
     this.dirty = true;
     this.matSnackbar.open('You have changed the graph!', undefined, {
       duration: 1000
     });
   }
 
-  myGraph : Firegraph = {
+  myGraph : Diazo = {
     edges: [], 
     nodes: [
       {
@@ -81,7 +81,7 @@ export class AppComponent {
     ]
   };
   
-  availableNodes : FiregraphNodeSet[] = [
+  availableNodes : DiazoNodeSet[] = [
     {
         id: 'general',
         label: 'General',
