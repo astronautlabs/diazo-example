@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { Diazo, DiazoNodeSet, DiazoContext } from 'diazo';
+import { DiazoGraph, DiazoNodeSet, DiazoContext } from 'diazo';
 import { MatSnackBar } from '@angular/material/snack-bar';
 
 @Component({
@@ -45,14 +45,14 @@ export class AppComponent {
     console.dir(context);
   }
 
-  onGraphChanged(graph : Diazo) {
+  onGraphChanged(graph : DiazoGraph) {
     this.dirty = true;
     this.matSnackbar.open('You have changed the graph!', undefined, {
       duration: 1000
     });
   }
 
-  myGraph : Diazo = {
+  myGraph : DiazoGraph = {
     edges: [], 
     nodes: [
       {
