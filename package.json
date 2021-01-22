@@ -1,6 +1,10 @@
 {
   "name": "@diazo/example",
   "version": "0.0.0",
+  "author": {
+    "name": "Astronaut Labs, LLC",
+    "url": "https://astronautlabs.com/"
+  },
   "scripts": {
     "ng": "ng",
     "website": "rimraf dist docs && npm run build && rename dist docs",
